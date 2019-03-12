@@ -17,7 +17,7 @@ export default class Lookup extends Component {
         {name && flagUrl && !error ? (
           <div className="content">
             <h1 className="is-large">{name}</h1>
-            <img src={flagUrl} width={250} />
+            <img src={flagUrl} alt={`Flag of ${name}.`} width={250} />
           </div>
         ) : (
           <div className="has-text-danger">No results found</div>
